@@ -44,6 +44,126 @@
 				<li class="sum">на сумму:<span>0,00 грн.</span></li>
 			</ul>
 		</nav>
+		<div class="selection clearfix">
+			<form action="#" class="by-car">
+				<div class="blockname">Поиск по автомобилю</div>
+				<div class="container left">
+					<label for="brand">Марка <span>авто</span>:</label>
+					<select name="brand" id="brand">
+						<option value="0"></option>
+						<option value="1">AUDI</option>
+						<option value="2">SEAT</option>
+						<option value="3">VW</option>
+					</select>
+					<label for="model">Модель <span>автомобиля</span>:</label>
+					<select name="model" id="model">
+						<option value="0"></option>
+					</select>
+					<label for="year">Год выпуска <span>автомобиля</span>:</label>
+					<select name="year" id="year">
+						<option value="0"></option>
+					</select>
+					<label for="complete-set">Комплектация:</label>
+					<select name="complete-set" id="complete-set">
+						<option value="0"></option>
+					</select>
+				</div>
+				<div class="container right clearfix">
+					<label for="brand-copy">Марка <span>авто</span>:</label>
+					<select name="brand" id="brand-copy">
+						<option value="0"></option>
+						<option value="1">AUDI</option>
+						<option value="2">SEAT</option>
+						<option value="3">VW</option>
+					</select>
+					<label for="model-copy">Модель <span>автомобиля</span>:</label>
+					<select name="model" id="model-copy">
+						<option value="0"></option>
+					</select>
+					<label for="year-copy">Год выпуска <span>автомобиля</span>:</label>
+					<select name="year" id="year-copy">
+						<option value="0"></option>
+					</select>
+					<label for="complete-set-copy">Комплектация:</label>
+					<select name="complete-set" id="complete-set-copy">
+						<option value="0"></option>
+					</select>
+				</div>
+				<a href="#" class="start-search ">поиск...</a>
+			</form>
+			<form action="#" class="tires">
+				<div class="blockname">поиск шин</div>
+				<label for="size-width">Размер:</label>
+				<select name="size-width" id="size-width">
+					<option value="0"></option>
+					<option value="1" selected>145</option>
+				</select>
+				<div class="separator">/</div>
+				<select name="size-height" id="size-height">
+					<option value="0"></option>
+				</select>
+				<label for="radius">R</label>
+				<select name="radius" id="radius">
+					<option value="0"></option>
+					<option value="1">10</option>
+					<option value="2">11</option>
+					<option value="3" selected>12</option>
+				</select>
+				<br>
+				<span class="season">Сезон:</span>
+				<input type="checkbox" name="summer" id="summer">
+				<label for="summer">лето</label><br>
+				<span class="season"></span>
+				<input type="checkbox" name="winter" id="winter">
+				<label for="winter">зима</label><br>
+				<span class="season"></span>
+				<input type="checkbox" name="all-season" id="all-season">
+				<label for="all-season">всесезон</label><br>
+				<a href="" class="start-search">поиск...</a>
+			</form>
+			<form action="#" class="rims">
+				<div class="container-left">
+					<div class="blockname">поиск дисков</div>
+					<label for="diameter">Диаметр <span>диска</span>:</label>
+					<select name="diameter" id="diameter">
+						<option value="0">10</option>
+						<option value="1">12</option>
+						<option value="2">13</option>
+						<option value="3" selected>14</option>
+					</select>
+					<label for="fitting-hole">Количество <span>крепежных отверстий</span>:</label>
+					<select name="fitting-hole" id="fitting-hole">
+						<option value="0">1</option>
+						<option value="1" selected>3</option>
+						<option value="2">4</option>
+						<option value="3">5</option>
+					</select>
+					<label for="fitting-hole-diameter">Диаметр <span>расположения крепежных отверстий</span>:</label>
+					<select name="fitting-hole-diameter" id="fitting-hole-diameter">
+						<option value="0">10</option>
+						<option value="1">11</option>
+						<option value="2" selected>12</option>
+						<option value="3">13</option>
+					</select>
+				</div>
+				<div class="container-right">
+					<label for="center-hole-diameter">ДЦО <br><span>(диаметр центрального отверстия)</span>:</label>
+					<select name="center-hole-diameter" id="center-hole-diameter">
+						<option value="0">10</option>
+						<option value="1">11</option>
+						<option value="2" selected>12</option>
+						<option value="3">13</option>
+					</select>
+					<label for="et">ЕТ<span>(вылет диска):</span></label>
+					<select name="et" id="et">
+						<option value="0">10</option>
+						<option value="1">11</option>
+						<option value="2">12</option>
+					</select>
+					<a href="" class="start-search clearfix">поиск...</a>
+				</div>
+			</form>
+		</div>
 		<main class="clearfix" >
 			<div class="catalog">
 				<div class="cap cap--1">

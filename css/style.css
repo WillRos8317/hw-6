@@ -194,6 +194,238 @@ nav a:hover {
 	background: -webkit-linear-gradient(top, #1f6585 0%,#0c3357 100%);
 	background: linear-gradient(to bottom, #1f6585 0%,#0c3357 100%);
 }
+.selection {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0;
+    text-align: center;
+}
+
+.by-car {
+    float: left;
+    box-sizing: border-box;
+    margin: 0 0 0 4px;
+    padding: 0 15px;
+    width: 415px;
+    height: 134px;
+    background-color: #fff;
+    border: 1px solid #9c9c9d;
+    border-radius: 17px;
+    box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, 0.75);
+}
+
+.blockname:before {
+    float: left;
+    margin: 2px 0 0 5px;
+    content: 'Диски:';
+    color: #154468;
+    font-family: Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 17px;
+}
+
+.blockname {
+    display: block;
+    margin: 0 6px 0 0;
+    color: #154467;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 17px;
+}
+
+.blockname:after {
+    float: right;
+    content: 'Шины:';
+    color: #154468;
+    font-family: Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 17px;
+}
+
+label {
+    display: inline-block;
+    width: 79px;
+    font-family: Arial,sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+label span {
+    color: #77858b;
+}
+
+select {
+    margin-bottom: 5px;
+    width: 101px;
+    height: 17px;
+    background-color: #fff;
+    box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+    vertical-align: middle;
+}
+
+select[name="year"] {
+    width: 57px;
+    margin-right: 44px;
+}
+
+.container {
+    width: 180px;
+    height: 85px;
+}
+
+.left {
+    clear: both;
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.start-search {
+    display: block;
+    clear: both;
+    height: 18px;
+    text-align: end;
+    color: #154467;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.tires {
+    float: left;
+    margin: 0 10px 0 14px;
+    box-sizing: border-box;
+    width: 193px;
+    height: 137px;
+    background-color: #fff;
+    border: 1px solid #9c9c9d;
+    border-radius: 17px;
+    box-shadow: 2.6px 4.3px 5px rgba(150, 150, 150, 0.75);
+}
+
+.rims {
+    float: left;
+    box-sizing: border-box;
+    width: 268px;
+    height: 136px;
+    background-color: #fff;
+    border: 1px solid #9c9c9d;
+    border-radius: 14px;
+    box-shadow: 2.6px 4.3px 5px rgba(150, 150, 150, 0.75);
+}
+
+.tires, .rims {
+    text-align: left;
+    padding: 0 15px;
+
+}
+
+.tires .blockname:before,
+.tires .blockname:after,
+.rims .blockname:before,
+.rims .blockname:after {
+    content: '' ;
+}
+
+.tires label, .season {
+    display: inline-block;
+    width: 45px;
+    color: #000;
+    font-family: 'Lucida Sans Unicode',Tahoma,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.tires select {
+    width: 51px;
+    height: 17px;
+}
+
+.separator {
+    display: inline-block;
+    margin: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#radius {
+    width: 45px;
+}
+
+label[for='radius'] {
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 7px;
+}
+
+.tires input[type='checkbox']+label {
+    height: 14px;
+}
+.tires input[type='checkbox'] {
+    margin: 1px;
+    width: 9px;
+    height: 9px;
+}
+
+.rims .container-left {
+    float: left;
+    width: 60%;
+    height: 100%;
+    line-height: 100%;
+}
+
+.rims .container-right:before {
+    float: left;
+    content: '';
+    width: 1px;
+    height: 106px;
+    background-color: #bdc6ca;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+.rims .container-right {
+    float: right;
+    width: 36%;
+    text-align: center;
+}
+
+select[name='diameter'],
+select[name='fitting-hole-diameter'],
+select[name='center-hole-diameter'],
+select[name='et']{
+    margin-bottom: 7px;
+    width: 57px;
+}
+
+select[name='fitting-hole'] {
+    margin-bottom: 14px;
+    width: 51px;
+}
+
+.rims label {
+    line-height: 8px;
+}
+
+.rims .container-right label:first-child {
+    margin-top: 8px;
+    height: 37px;
+}
+
+.rims .container-right label {
+    width: 68px;
+    height: 20px;
+}
+
 
 .calc {
 	position: relative;
@@ -264,8 +496,7 @@ main {
 	margin-top: 2px;
 }
 
-.catalog p,
-.filter  p {
+.catalog p, .filter  p {
 	position: relative;
 	padding-top: 2px;
 	padding-left: 30px;
@@ -276,8 +507,7 @@ main {
 	letter-spacing: 0.7px;
 }
 
-.catalog p:before,
-.filter p:before {
+.catalog p:before, .filter p:before {
 	content: '';
 	position: absolute;
 	display: block;
@@ -382,7 +612,6 @@ label:before {
 	background: url(../img/check.png);
 }
 
-
 input[type="checkbox"]:checked + label:before {
     background:url(../img/checked.png) top no-repeat;
 }
@@ -416,7 +645,7 @@ input[type="checkbox"]:checked + label:before {
 	text-decoration: underline;
 }
 
-.products	{
+.products {
 	position: relative;
 	overflow: hidden;
 	margin: 0 auto;
